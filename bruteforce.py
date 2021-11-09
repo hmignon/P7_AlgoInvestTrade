@@ -81,10 +81,10 @@ def display_results(best_combo):
     print("\nMost profitable investment :\n")
 
     for item in best_combo:
-        print(f"{item[0]} - {item[1]}€ - +{item[2]}%")
+        print(f"{item[0]} | {item[1]} € | +{item[2]} %")
 
     print("\nTotal cost : ", calc_cost(best_combo), "€")
-    print("Total profit : ", calc_profit(best_combo), "€")
+    print("Profit : +", calc_profit(best_combo), "€")
     print("\nTime elapsed : ", time.time() - start_time, "seconds")
 
 
