@@ -1,5 +1,10 @@
 # Projet 7 DA-Python OC (Hélène Mignon)
-***Livrable du Projet 7 du parcours D-A Python d'OpenClassrooms : calcul de la meilleure combinaison d'actions en fonction de leur bénéfices. Utilisation de l'algorithme du sac à dos.***
+***Livrable du Projet 7 du parcours D-A Python d'OpenClassrooms : 
+calcul de la meilleure combinaison d'actions en fonction de leurs bénéfices selon deux approches ;***
+
+- ***Bruteforce***
+
+- ***Programmation dynamique (algorithme du sac à dos)***
 
 _Testé sous Windows 10 - Python version 3.9.5_
 
@@ -29,7 +34,7 @@ Note : Lors du traitement des données, le programme affiche une barre de progre
 
 ## Exécution du programme
 
-### Bruteforce.py
+### Bruteforce
 
     python bruteforce.py
 
@@ -39,9 +44,9 @@ Note : Lors du traitement des données, le programme affiche une barre de progre
 
 *Note : Le bruteforce ne traîte que les données du fichier "test_shares.csv", contenant 20 actions. Les datasets 1 et 2 résulteraient à un temps d'exécution extrêmement long.*
 
-### Optimized.py
+### Programmation dynamique
 
-La version optimisée nécessite d'entrer le nom du fichier à traîter, **sans le chemin d'accès ni l'extension de fichier** :
+La version optimisée nécessite d'entrer le nom du fichier à traiter, **sans le chemin d'accès ni l'extension de fichier** :
 
     python optimized.py dataset1
 
@@ -49,7 +54,7 @@ Comme pour le bruteforce, il est possible d'entrer un montant personnalisé, com
 
     python optimized.py dataset2 720
 
-Enfin, il est également possible de traîter le fichier de test (20 actions), avec ou sans montant personnalisé :
+Enfin, il est également possible de traiter le fichier de test (20 actions), avec ou sans montant personnalisé :
 
     python optimized.py test_shares
 

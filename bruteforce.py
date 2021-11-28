@@ -5,6 +5,7 @@ import csv
 import time
 import sys
 
+
 start_time = time.time()
 
 # Check for custom cash investment (default = 500)
@@ -24,7 +25,8 @@ def main():
 
 
 def read_csv():
-    """Import shares data from .csv
+    """Import shares data from test_shares.csv
+
     @return: shares data (list)
     """
     with open("data/test_shares.csv") as csvfile:
@@ -32,7 +34,9 @@ def read_csv():
 
         shares_list = []
         for row in shares_file:
-            shares_list.append([row[0], float(row[1]), float(row[2])])
+            shares_list.append(
+                (row[0], float(row[1]), float(row[2]))
+            )
 
         return shares_list
 
@@ -92,6 +96,7 @@ def calc_profit(combo):
 
 def display_results(best_combo):
     """Display best combination results
+
     @param best_combo: most profitable shares combination (list)
     """
     print(f"\nMost profitable investment ({len(best_combo)} shares) :\n")
